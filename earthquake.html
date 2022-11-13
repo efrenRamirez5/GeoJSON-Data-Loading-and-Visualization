@@ -98,9 +98,6 @@
                 cell3.innerHTML = new Date(earthquakes.features[i].properties.time).toLocaleDateString(
                     "en-US");
             }
-        };
-
-        geojsonFetch();
 
         //load data to the map as new layers and table on the side.
         map.on('load', function loadingData() {
@@ -138,6 +135,9 @@
                 }
             });
         });
+    }
+
+    geojsonFetch();
 
         let btn = document.getElementsByTagName("button")[0];
 
