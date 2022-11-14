@@ -2,7 +2,7 @@
 <html lang="en-US">
  <head>
     <meta charset="utf-8">
-    <title>Earthquake List</title>
+    <title>Spain Cities</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
@@ -54,14 +54,13 @@
     <main id="container">
         <div id="side-panel">
 
-            <h2>Earthquake List</h2>
-            <button>Sort by Magnitude</button>
+            <h2>Cities in Spain on Efren's Bucket List.</h2>
+            <button>Sort by Bucket List</button>
  
             <table>
                 <tr>
-                    <th>id</th>
-                    <th>magnitude</th>
-                    <th>timestamp</th>
+                    <th>City</th>
+                    <th>Priority</th>
                 </tr>
             </table>
 
@@ -79,11 +78,11 @@
         });
 
         async function geojsonFetch() {
-            let response, earthquakes, japan, table;
-            response = await fetch('assets/Regions.csv');
-            earthquakes = await response.json();
-            response = await fetch('assets/japan.json');
-            japan = await response.json();
+            let response, cities, spain, table;
+            response = await fetch('assets/cities.geojson');
+            cities = await response.json();
+            response = await fetch('assets/spain.geojson');
+            spain = await response.json();
 
             table = document.getElementsByTagName("table")[0];
             let row, cell1, cell2, cell3;
