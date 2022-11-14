@@ -2,10 +2,10 @@
     "type": "FeatureCollection",
     "name": "cities",
     "features": [
-    { "type": "Feature", "properties": {"id": "Barcelona","rank": 1}, "geometry": { "type": "Point", "coordinates": [ 2.14151, 41.36081 ] } },
-    { "type": "Feature", "properties": { "id": "Madrid", "rank": 2 }, "geometry": { "type": "Point", "coordinates": [ -3.702288, 40.478847 ] } },
-    { "type": "Feature", "properties": { "id": "Ibiza", "rank": 3 }, "geometry": { "type": "Point", "coordinates": [ 1.43296, 38.90883 ] } },
-    { "type": "Feature", "properties": { "id": "Seville", "rank": 4 }, "geometry": { "type": "Point", "coordinates": [ -5.97317, 37.38283 ] } },
-    { "type": "Feature", "properties": { "id": "Utrecht", "rank": 5 }, "geometry": { "type": "Point", "coordinates": [ -0.98333, 37.59998 ] } }
+        { "type": "Feature", "properties": { "id": "Utrecht", "rank": 5 }, "geometry": { "type": "Point", "coordinates": [ -0.98333, 37.59998 ] } },
+        { "type": "Feature", "properties": { "id": "Madrid", "rank": 2 }, "geometry": { "type": "Point", "coordinates": [ -3.702288, 40.478847 ] } },
+        { "type": "Feature", "properties": { "id": "Ibiza", "rank": 3 }, "geometry": { "type": "Point", "coordinates": [ 1.43296, 38.90883 ] } },
+        { "type": "Feature", "properties": { "id": "Seville", "rank": 4 }, "geometry": { "type": "Point", "coordinates": [ -5.97317, 37.38283 ] } },
+        { "type": "Feature", "properties": {"id": "Barcelona","rank": 1}, "geometry": { "type": "Point", "coordinates": [ 2.14151, 41.36081 ] } }
     ]
     }
