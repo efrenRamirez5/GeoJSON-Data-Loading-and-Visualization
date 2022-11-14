@@ -80,7 +80,7 @@
 
         async function geojsonFetch() {
             let response, earthquakes, japan, table;
-            response = await fetch('assets/earthquakes.geojson');
+            response = await fetch('assets/Regions.csv');
             earthquakes = await response.json();
             response = await fetch('assets/japan.json');
             japan = await response.json();
@@ -103,7 +103,7 @@
         map.on('load', function loadingData() {
 
             map.addSource('earthquakes', {
-                type: 'geojson',
+                type: 'csv',
                 data: earthquakes
             });
 
